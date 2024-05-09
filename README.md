@@ -6,13 +6,10 @@ Assumption - The form validates an email of the form "anystring@anystring.anystr
 1) Clone this project using this command
 
        git clone https://github.com/<"username">/<"repo-name">.git
-2) Go to terminal and change directory
-   
-       cd thence
-3) Run command
+2) Go to terminal and run command
 
        npm install
-4) run project by using command
+3) Run project by using command
 
        npm start
 
