@@ -37,5 +37,8 @@ const Container=styled.div`
         padding: 16px;
         border-radius: 50%;
         cursor: pointer;
+    },
+    button:hover {
+      background-color: var(--secondaryCTAHoverColor);
     }
 `;
