@@ -5,7 +5,7 @@ Assumption - The form validates an email of the form "anystring@anystring.anystr
 # Steps to run this project
 1) Clone this project using this command
 
-       git clone https://github.com/<"username">/<"repo-name">.git
+       git clone https://github.com/Aditya-Nagpal/Thence-Assignment-Project.git
 2) Go to terminal and change directory
   
        cd Thence-Assignment-Project
