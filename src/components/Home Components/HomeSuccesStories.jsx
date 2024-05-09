@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import "@fontsource/covered-by-your-grace"
 import "@fontsource/manrope"
+import IntroSubTitles from '../IntroSubTitles'
 import HomePageGirlImage from '../../assets/images/home page girl.png'
 import spark from '../../assets/images/spark.png'
 import '../../fonts/Switzer-Medium.ttf'
@@ -9,12 +10,11 @@ import rocket from '../../assets/images/rocket.png'
 import { FaArrowRight } from "react-icons/fa"
 
 export default function HomeSuccesStories() {
+  const text1='Success stories';
+  const text2="success story we've encountered.";
   return (
     <Container>
-      <header>
-        <p>Success stories</p>
-        <p>Every success story we've encountered.</p>
-      </header>
+      <IntroSubTitles text1={text1} text2={text2} />
 
       <main>
         <section>
@@ -63,31 +63,12 @@ const Container=styled.div`
   display: flex;
   flex-direction: column;
   align-items: center; 
-  header{
-    text-align: center;
-    width: 588px;
-    margin-bottom: 112px;
-    p:first-child{
-      margin: 0 0 16px;
-      font-family: Covered By Your Grace;
-      color: #2DA950;
-      font-size: 36px;
-      line-height: 110%;
-      letter-spacing: -0.02em;
-    }
-    p:nth-child(2) {
-      margin: 0;
-      font-family: Manrope;
-      font-weight: 600;
-      font-size: 56px;
-      line-height: 120%;
-      letter-spacing: -0.02em;
-    }
-  }
+  padding: 79px 0;
+  margin-bottom: 62px;
   main {
     display: flex;
     width: 100%;
-    padding-left: 62px;
+    padding: 112px 0 0 62px;
     section:first-child {
       min-width: 727.49px;
       position: relative;
@@ -213,20 +194,6 @@ const Container=styled.div`
         max-width: 398px;
         margin: 0 0 55px;
       }
-      .ellipse-div {
-        margin-bottom: 130.25px;
-        div {
-          display: inline-block;
-          height: 10.75px;
-          width: 10.75px;
-          background-color: #E4E3E3;
-          border-radius: 50%;
-          margin-left: 12px;
-        }
-        div:first-child {
-          background-color: #2DA950;
-        }
-      }
       button {
         padding: 31px 40px;
         color: white;
@@ -236,11 +203,15 @@ const Container=styled.div`
         font-family: Manrope;
         border-radius: 100px;
         background-color: #1C1C1C;
+        cursor: pointer;
         display: flex;
         align-items: center;
         img {
           margin-left: 16px;
         }
+      },
+      button:hover {
+        background-color: var(--primaryCTAHoverColor);
       }
     }
   }

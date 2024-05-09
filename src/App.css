@@ -1,9 +1,48 @@
 @font-face {
-    font-family: 'Switzer-Medium';
-    src: url('./fonts/Switzer-Medium.woff2') format('woff2'),
-         url('./fonts/Switzer-Medium.woff') format('woff'),
-         url('./fonts/Switzer-Medium.ttf') format('truetype');
-         font-weight: 500;
-         font-display: swap;
-         font-style: normal;
-  }
+  font-family: 'Switzer-Medium';
+  src: url('./fonts/Switzer-Medium.woff2') format('woff2'),
+      url('./fonts/Switzer-Medium.woff') format('woff'),
+      url('./fonts/Switzer-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-display: swap;
+      font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Manrope Medium'), url('./fonts/manrope-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Manrope Regular'), url('./fonts/manrope-regular.woff') format('woff');
+}
+  
+
+:root {
+    --primaryCTAHoverColor: #4E4E4E;
+    --secondaryCTAHoverColor: #F1F1F1;
+    --carouselHoverColor: #CAD0CB;
+}
+
+.ellipse-div {
+    margin-bottom: 130.25px;
+    div {
+      display: inline-block;
+      height: 10.75px;
+      width: 10.75px;
+      background-color: #E4E3E3;
+      border-radius: 50%;
+      margin-left: 12px;
+    }
+    div:first-child {
+      background-color: #2DA950;
+    }
+    div:not(:first-child):hover {
+        background-color: var(--carouselHoverColor);
+    }
+}
